@@ -1,4 +1,3 @@
-%\linebreak
 \documentclass[a4paper,12pt]{report}
 \usepackage[utf8x]{inputenc}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
@@ -130,11 +129,14 @@
 	\newpage
 		\pagenumbering{roman}
 		
+
+\newpage
+\tableofcontents
+	
 		
 		
-		
-		\section*{Introduction}
-\vspace{1cm}
+		\chapter{Introduction générale}
+\\
     
 
 
@@ -175,10 +177,190 @@ approche est créée par Linstedt et s’appelle \textbf{ « Data Vault »}}
 
 \textcolor{black}{ Cette étude comparative sera accompagnée par des tests sur des données réelles (au sein de l'entreprise de mon contrat professionalisation) avec un groupe témoin afin d’aboutir à une synthèse permettant de répondre à la question :  \textbf{ « Quelle approche dans quelle situation ?».}}
 \\
+
+\chapter{Les systèmes d’Information décisionnels}
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+\textcolor{black}{Aujourd’hui, l’entreprise doit faire face à beaucoup de défis et en particulier,le taux énorme de l’information provenant des différentes sources hétérogènes et sa gestion a fin de pouvoir entirer des profits.
+\textcolor{black}{Les sources d’information dans une entreprise sont éclatées et amples.La consolidation 
+et l’analyse de ces sources permettent l’optimisation du patrimoine informationnel de cette entreprise et son pilotage efficace afin de:}
+\begin{itemize}
+	\item - Surmonter la concurrence rude sur le marché.
+	\item - Assurer l’innovation continue.
+	\item - Fidéliser et être à l’écoute des clients de l’entreprise ...etc.
+\end{itemize}
+\textcolor{black}{Il est donc primordial de doter l’entreprise d’un système d’information décisionnel (SID) qui aura pour mission l’analyse et la consolidation de ses données.
+Dans ce chapitre,je vais aborder les concepts liés aux systèmes décisionnels. je commence par des définitions, je cite après l’historique et les objectifs des SID etje m'étalons à la fin sur l’architecture d’un SID.}}
+
+\section{Définitions}
+\subsection{La notion d’information}
+\textcolor{black}{Une panoplie de définitions sont données à ce concept. Ces définitions divergent selon le positionnement des chercheurs d’une part et les disciplines concernées d’autre part.}
+\textcolor{black}{Parmi les nombreuses définitions proposées, nous retiendrons celle de Davis, qui se réfère aux fonctions de l’information, indépendamment de sa forme et de son traitement:}
+
+\textcolor{black}{ " L’information es tune image des objets et des faits ;elle les représente, elle corrige ou confirme l’idée qu’on se faisait.L’information contient une valeur de surprise,en ce sens
+qu’elle apporte une connaissance que le destinataire ne possédait pas ou qu’il ne pouvait pas prévoir (Davis and Olson, 1986)."}
+
+\textcolor{black}{ " L’information a une valeur car elle permet de choisir, de prendre des décisions et d'agir.
+Sa valeur est donc liée à son emploi dans le contexte de prise de décisions (Haouet, 2008)"}
+
+\textcolor{black}{ Ainsi pour March, " l’information donne son sens à une situation de décision et modifie donc à la fois la structure des options et les préférences recherchées.(March, 1991)."}
+
+\subsection{La notion de système d’information}
+\textcolor{black}{La notion de système d’information a donné lieu à différentes interprétations et sa définition est loin de faire l’unanimité (Haouet, 2008). En effet plusieurs définitions ont été données à ce terme. Dans la première acception, je retiens celle de Le Moigne qui dit que «Le système d’information est l’ensemble des méthodes et moyens de recueil, de contrôle, et de distribution des informations nécessaires à l’exercice de l’activité en tout point de l’organisation. Il a pour fonction de produire et de mémoriser les informations de l’activité du système opérant, puis de les mettre à disposition du système de décision (système depilotage)» (Le Moigne, 1977). Dans la seconde acception,on retrouve la définition de Reix selon laquelle le système d’information est «un système d’interprétation d’un ensemble d’acteurs sociaux qui mémorisent et transforment des représentations via des technologies de l’information et des modes opératoires » (Reix andRowe, 2002).}
+
+\subsection{Les systèmes d’information décisionnels}
+
+\textcolor{black}{Le système d’information décisionnel appelé aussi système décisionnel ou BI (pour Business Intelligence en anglais)est généralement défini comme étant «un système permettant aux décideurs de l’entreprise de disposer d’informations pertinentes et d’outils d’analyse puissants pour aider à prendre les bonnes décisions au bon moment» (Devisy,2002).}
+
+\textcolor{black}{(LAU et al., 2009) voit qu’un système décisionnel est «l’ensemble des moyens, outils et méthodes qui supportent le processus de collecte, consolidation, modélisation, analyse et restitution des données issues des systèmes d’information opérationnels dans le but de
+faciliter la prise de décision »}
+
+\textcolor{black}{Donc, unsystème décisionnel manipule des données opérationnelles avec différents moyens de collecte, destockage et d’analyse pour soutenir le processus d’aide à la décision.}
+
+\section{Historique des Systèmes Décisionnels}
+\textcolor{black}{Dès les années 60, les données informatisées dans les organisations ont pris une imortance qui n’acessé de croitre. Les systèmes informatiques gérant ces données avaient pour fonction essentielle d’automatiser les processus de production de l’information afin de réduire les ressources consommées en diminuant les tâches redondantes  (Teste, 2009).}
+
+\textcolor{black}{Au début des années 70,les systèmes interactifs d’aide à la décision basés sur des technologies de recherche opérationnelle, simulation et optimisation sont apparus et ont été à l’origine de l’apparition des premiers outils informatiques d’aide à ladécision qui allaient principalement s’appliquer, par un dialogue «Homme-Machine»,aux processus de décisions exécutés aux niveaux hiérarchiques supérieurs (Haouet, 2008).
+
+Avec l’accroissement des besoins en matière de décision, de nouveaux concepts sont apparus au début des années 90 :l’entrepôt de données (datawarehouse) et les magasins de données (datamart). Ces derniers ont révolutionné les outils décisionnels en rassemblant les données dans un référentiel unique, orienté sujet, permettant une grande souplesse et précision.
+Une nouvelle étape est ainsi franchie dansl ’informatique décisionnelle avec ces avancées technologiques:les outils informatiques d’aide à la décision, désormais appelés «Business ntelligence» (Doucet and De La Villarmois, 2007).}
+
+\textcolor{black}{A partir des années 90, plusieurs éditeurs de logiciels ont commencé à proposer des outils facilitant l’analyse des données pour soutenir les prises de décision comme les tableurs et des outils facilitant l’accès aux données pour les décideurs au travers d’interfaces
+graphiques dédiées à l’interrogation. Après, les outils ETL (Extract-Transform-Load en
+français Extraire-Transformer-Charger) destinés à faciliter l’extraction et la transformation de données décisionnelles ont vu la lumière. Dès la fin des années 90, les acteurs importants tels que Microsoft, Oracle, IBM, SA sont intervenus sur ce nouveau
+marché en faisant évoluer leurs outils et en acquérant de nombreux logiciels spécialisés.
+Cette dernière décennie a été marquée par l’émergence de plusieurs outils de business intelligence issus du monde du logiciel libre (OpenSouce), qui ont atteint aujourd’hui une certaine maturité (SpagoBI, Talend , Jasper ) (Teste, 2009).}
+
+
+\section{Objectifs et finalités des systèmes d’informations décisionnels}
+
+\textcolor{black}{L’acquisition d’un système d’information décisionnel est un objectif souhaité et partagé
+par tous les dirigeants des entreprises malgré la variété de leurs champs d’action.Dans (Kimball and Ross, 2013), on recense les objectifs suivants : }
+
+\begin{itemize}
+	\item  Faciliter et soutenir la prise de décision.
+	\item  Améliorer les performances décisionnelles de l’entreprise.
+	\item  Accessibilité facile et rapide aux informations. ...etc.
+	\item  Cohérence des informations : les  données du système sont crédibles et de qualité.
+	\item Adaptation aux changements : Les données existantes doivent généralement rester inchangées.Lorsque la technologie ou les besoins changent, les données doivent être changées en tenant au courant tous les utilisateurs du système.
+	\item Présentation des informations à temps : Les informations doivent être disponibles au bon moment afin de réagir rapidement.
+	\item Protection et sécurisation des informations : Le système doit permettre le contrôle d’accès à ces informations confidentielles.
 	
-\vspace{1cm}
-\section*{Bibliographie}
-\vspace{1cm}
+\end{itemize}
+
+\section{Système Transactionnel VS Système Décisionnel}
+\textcolor{black}{Les systèmes transactionnels, d’après (Kimball et al., 2002), sont : « Des applications opérationnelles qui capturent les transactions de l’entreprise ».
+Le système transactionnel représente donc les tâches, quotidiennes, répétitives, et atomiques effectuées par les employés de l’entreprise.
+Les systèmes opérationnels ne peuvent pas répondre aux besoins des décideurs qui veulent des informations synthétisées, et cela à cause du grand volume de données brutes.
+A cet effet,on a assisté une naissance prématurée des systèmes décisionnels.}
+
+	
+\section{Architecture d’un système décisionnel}	
+\textcolor{black}{Le processus d’un système décisionnel consiste à récupérer des données brutes issues des différentes sources, internes ou externes,à les transformer en information afin de les diffuser sous forme de rapports ou de tableaux de bord(LAU et al., 2009).}
+\textcolor{black}{Afin de mettre en oeuvre ce processus, l’architecture d’un système décisionnel mise en place est composée en quatre niveaux qui sont : les sources de données, l’entrepôt et magasins de données, la phase ETL et la restitution de données.}
+
+\subsection{Sources de données}
+\textcolor{black}{Les sources de données alimentent l’entrepôt de données. Elles sont regroupées en quatre catégories (Ponniah, 2001):}
+
+\begin{itemize}
+	\item  Les données de production
+	\item  Les données internes
+	\item  Les données archivées
+	\item  Les données externes
+\end{itemize}	
+
+
+\subsection{Le processus ETL (Extraction, Transformation et Chargement)}
+\textcolor{black}{Afin d’exploiter les données pour la prise de décision, il faut les rassembler dans une même zone. Et comme les données de l’entreprise, qu’elles soient homogènes ou hétérogènes, se trouvent dans plusieurs endroits alors on utilise un outil ETL pour les rassembler.}
+\textcolor{black}{Selon (Poletto, 2012), un ETL extrait, nettoie, et importe les données à partir de différentes sources et les charge dans un entrepôt de données.}
+
+\subsection{Les entrepôts et magasins de données}
+\textcolor{black}{Grâce au processus ETL, les données sont stockées et organisées dans un entrepôt de données. Le concept d’entrepôt de données a été introduit car les bases de données transactionnelles ne répondent pas aux besoins d’analyse.}
+
+\subsubsection{Entrepôts de données}
+\textcolor{black}{Kimball définit l’entrepôt de données comme étant « une copie des données transactionnelles d’une entreprise structurée de manière spécifique pour l’interrogation et l’analyse »(Kimball and Ross, 1996).}
+
+\textcolor{black}{De son coté,Bill Inmon fournit la définition suivante:
+
+« Un entrepôt de données est une collection de données orientées sujet, intégrées, variant selon le temps et non volatiles, qui sert de support au processus de prise de décision des acteurs du management (les décideurs) »(Inmon, 1996).}
+
+\subsubsection{Magasins de données (DataMart)}
+\textcolor{black}{Un magasin de données est un extrait de l’entrepôt conforme à des besoins d’analyse particuliers et organisé selon un modèle adapté aux outils d’analyse etd ’interrogation
+décisionnelle. Le magasin est généralement stocké au sein d’une base de données multidimensionnelle (BDM)(Tournier, 2007). Cela signifie qu’un magasin concentre sur les données d’un département dans l’entreprise.}
+\textcolor{black}{Pour une bonne gestion de données,l’entrepôt de données doit nécessairement disposer de métadonnées(données sur les données).}
+\textcolor{black}{Les méta données d’un entrepôt de données se présentent sous trois catégories (Ponniah, 2001) :}
+
+\begin{itemize}
+	\item  Métadonnées opérationnelles: Elles contiennent toutes les informations sur les sources de données opérationnelles.
+	\item  Métadonnées d’extraction et de transformation : Elles contiennent les fréquences d’extraction, les méthodes d’extraction, les règles d’extraction, les informations sur toutes les transformations opérées sur les données.
+	\item  Métadonnées de l’utilisateur final : Elles permettent à l’utilisateur final de retrouver l’information dans l’entrepôt de données.
+
+\end{itemize}	
+
+\subsubsection{Types de données stockées dans un entrepôt de données}
+\textcolor{black}{Un entrepôt de données est articulé en quatre catégories de données, organisées selon un axe historique et un axe synthétique.}
+\textcolor{black}{L’axe synthétique établit une hiérarchie d’agrégation comprenant (Inmon, 2002) :}
+
+\begin{itemize}
+	\item  Les données détaillées : Elles proviennent des systèmes opérationnels et représentent les évènements les plus récents.Seules les données qui servent au processus décisionnel sont stockées dans l’entrepôt.
+  	\item  Les données agrégées : Elles synthétisent les données détaillées et correspondent à des éléments d’analyse représentatifs des besoins utilisateurs. Elles ont pour but
+de faciliter la navigation suivant les besoins décisionnels et la restitution d’un résultat d’analyse ou de synthèse.
+	\item  Les données fortement agrégées : Elles synthétisent les données agrégées à un niveau supérieur.
+
+\end{itemize}
+
+\textcolor{black}{L’axe historique comprend les données détaillées historisées représentant les évènements passés.}
+
+\subsubsection{Modélisation des entrepôts de données}
+\textcolor{black}{La modélisation d’un entrepôt de données est le processus permettant de mettre en place un entrepôt de données. Il existe plusieurs approches pour mettre en place un entrepôt de données.Cependant, trois approches sont les plus répandues. Il s’agit de l’approche d’Inmon, l’approche de Kimball et l’approche DataVault.}
+\textcolor{black}{L’étude et la comparaison de ces trois approches sont abordées dans les deux prochains chapitres.}
+
+
+\section*{Conclusion}
+
+\textcolor{black}{Les systèmes décisionnels occupent une place importante dans les entreprises vu qu’ils soutiennent les dirigeants pour prendre des décisions au bonmoment.}
+\textcolor{black}{L’entrepôt de données est le coeur de l’architecture décisionnelle. Il est alimenté à partir de données sources grâce aux outils d’ETL. Ces données deviennent alors exploitables à l’aide d’outils d’analyse et de restitution.}
+
+
+
+\chapter{Approches de modélisation des entrepôts de données}
+\section*{Introduction}
+\textcolor{black}{Afin de construire un entrepôt de données pour une entreprise, le choix des méthodes et outils de conception et de maintenance est une étape primordiale et très importante.}
+
+\textcolor{black}{Depuis des décennies, deux approches classiques étaient en rivalité rude quant à la modélisation des entrepôts de données. L’approche de modélisation par sujet et normalisation préconisée par son inventeur Inmon et l’approche de modélisation dimensionnelle de Kimball.}
+
+\textcolor{black}{Ces dernières années, une nouvelle approche est entrée fortement en compétition et attire l’attention des entreprises jour après jour. Elle s’agit de l’approche DataVault
+développée par son inventeur DanLinstedt. Dans ce chapitre,nous allons étudier chaque approche : sa philosophie, son architecture et la méthodologie pour la mettre en place.}
+
+\section{Approche d’Inmon}
+\textcolor{black}{Cette approche est créée par Bill Inmon dans les années 90 pour répondre au besoin des entreprises et leur permettre de développer leurs systèmes décisionnels. Elle permet le
+stockage de l’intégralité des évènements de l’entreprise et engage des ressources et moyens importants pour la réaliser.}
+
+\textcolor{black}{L’approche d’Inmon est basée sur les schémas Entité-Association des systèmes opérationnels. Les données de l’entreprise sont chargées sans connaitre à priori les besoins des
+utilisateurs (Denis, 2008), C’est pourquoi cette approche est qualifiée de «piloter par les données ».}
+
+\section{Approchede Kimball}
+\textcolor{black}{Kimball a créé son approche dans les années 90 en proposant une nouvelle architecture, nouvelle vision et une modélisation novatrice de l’entrepôt de données.}
+
+\textcolor{black}{Cette approche est basée sur le concept de la modélisation dimensionnelle. Kimball
+oppose lap hilosophie d’Inmon quant à l’isolation des utilisateurs finaux dans le processus d’élaboration de l’entrepôt. En effet, son approche implique fortement les utilisateurs
+finaaux dès les premières phases du projet, c’est pourquoi cette méthode est appelée « piloter par les besoins utilisateurs».}
+
+
+\section{Approchede DataVault}
+\textcolor{black}{Au début des années 2000, Dan Linstedt est entré dans la compétition en proposant une troisième approche dite «modélisation DataVault»(par voûtes de données).Cette modélisation est qualifiée de mitoyenne située entre les deux approches de Kimball et Inmon. Elle est particulièrement adaptée à l’audit de données,à la traçabilité de la donnée et à la résistance au changement de la structure de données.}
+
+\textcolor{black}{Cette approche palie plusieurs problèmes auxquels font face les deux approches classiques. Le problème majeur est le re-engineering en cas du changement du business}
+
+
+
+
+
+\\
+\chapter*{Bibliographie}
+\addcontentsline{toc}{chapter}{Bibliographie}
+\\
 
 
 
